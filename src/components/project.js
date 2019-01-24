@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import React from "react";
+import styled from "styled-components";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 const Title = styled(OutboundLink)`
   font-size: 1.25rem;
@@ -13,7 +13,7 @@ const Title = styled(OutboundLink)`
   > h3 {
     margin: 0;
   }
-`
+`;
 
 const Container = styled.div`
   border-bottom: solid 1px #ddd;
@@ -22,7 +22,7 @@ const Container = styled.div`
     font-size: 16px;
     margin: 10px 0 0 0;
   }
-`
+`;
 
 const Wrapper = styled.ul`
   list-style: none;
@@ -42,21 +42,21 @@ const Wrapper = styled.ul`
       color: #1a1919;
     }
   }
-`
+`;
 
 const Image = styled.img`
   max-width: 60%;
   height: auto;
   margin: 10px 0;
-`
+`;
 
 const Project = props => {
-  let animate = props.animate
-  let link = props.link
-  let name = props.name
-  let description = props.description
-  let skills = props.skills
-  let image = props.image
+  let animate = props.animate;
+  let link = props.link;
+  let name = props.name;
+  let description = props.description;
+  let skills = props.skills;
+  let image = props.image;
 
   return (
     <Container className={`slide-in-${animate}`}>
@@ -71,7 +71,7 @@ const Project = props => {
       {description.length > 0 && <p>{description}</p>}
       {image.length > 0 && <Image src={image} alt="project_image" />}
     </Container>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
