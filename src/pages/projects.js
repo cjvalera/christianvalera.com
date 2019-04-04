@@ -13,7 +13,7 @@ const ProjectsPage = () => (
     <Project
       animate="right"
       name="Bronco Express"
-      link="/"
+      link="https://itunes.apple.com/us/app/bronco-express-bus-routes/id1450365090?mt=8"
       description="iOS app for the Bronco Shuttle in Cal Poly Pomona. Track schedules and set reminder for bus times.
        "
       skills={["Swift", "XCode", "iOS", "MVC"]}
@@ -43,7 +43,7 @@ const ProjectsPage = () => (
     />
 
     <Project
-      animate="right"
+      animate="left"
       name="Queen Mary"
       link="https://queenmary.com/"
       description="Redesign The Queen Mary's website with a responsive and modern look. Built the CMS
@@ -53,7 +53,7 @@ const ProjectsPage = () => (
     />
 
     <Project
-      animate="left"
+      animate="right"
       name="Edelbrock"
       link="https://play.google.com/store/apps/details?id=com.edelbrock.etuner.android&hl=en_US"
       description="An android app that communicates to a proprietary ECU device via bluetooth. Implemented the UI to
