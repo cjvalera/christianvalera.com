@@ -43,15 +43,6 @@ const ProjectsPage = () => (
     />
 
     <Project
-      animate="left"
-      name="MexCocina Cafe"
-      link="http://mexcocinacafe.com/"
-      description="A responsive website for a family owned restaurant that serves authentic Mexican food."
-      skills={["HTML", "CSS", "jQuery", "WordPress"]}
-      image="https://i.imgur.com/VL6vhHX.jpg"
-    />
-
-    <Project
       animate="right"
       name="Queen Mary"
       link="https://queenmary.com/"
