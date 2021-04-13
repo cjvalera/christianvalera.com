@@ -32,7 +32,6 @@ const Role = styled.span`
 
 const roles = [
   'Full-Stack Developer',
-  'Front-End Developer',
   'Software Developer',
   'iOS Developer',
 ]
@@ -58,7 +57,7 @@ class IndexPage extends Component {
   }
 
   render() {
-    let index = this.state.roleIndex % roles.length !== 3 ? 0 : 1
+    let index = this.state.roleIndex % roles.length !== 2 ? 0 : 1
     let textBeforeRole = consonant[index]
     let role = roles[this.state.roleIndex % roles.length]
 
@@ -90,17 +89,11 @@ class IndexPage extends Component {
                 {' '}
                 RedBull
               </BoldLinks>
-              ,
+              , and
               <BoldLinks target="_blank" href="https://www.queenmary.com/">
                 {' '}
-                Queen Mary
+                Queen Mary.
               </BoldLinks>
-              ,
-              <BoldLinks target="_blank" href="https://ribbon.me/">
-                {' '}
-                Ribbon
-              </BoldLinks>{' '}
-              and many other well-known companies!
             </p>
             <p>
               With a strong passion for tecnhology, I am always striving to
