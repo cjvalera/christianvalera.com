@@ -75,7 +75,7 @@ const Social = () => {
           Resume
         </ResumeButton>
         <Wrapper className="flicker-in-1">
-          <SocialIcons target="_blank" href="https://twitter.com/salmonlover11">
+          <SocialIcons target="_blank" href="https://twitter.com/siakdeta">
             <Twitter size="20" alt="twitter" />
           </SocialIcons>
           <SocialIcons target="_blank" href="https://github.com/cjvalera">
