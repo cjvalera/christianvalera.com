@@ -72,14 +72,14 @@ class IndexPage extends Component {
             <p>
               {' '}
               I am currently employed at{' '}
-              <BoldLinks target="_blank" href="https://www.medtronic.com/">
-                Medtronic
+              <BoldLinks target="_blank" href="https://www.glossier.com/">
+                Glossier
               </BoldLinks>{' '}
               and a graduate of Cal Poly Pomona with a B.S. in Computer
               Science.{' '}
             </p>
             <p>
-              I've worked with brands and businesses such as:
+              I've previously worked with brands and businesses such as:
               <BoldLinks target="_blank" href="https://wagwalking.com/">
                 {' '}
                 Wag!
@@ -89,11 +89,15 @@ class IndexPage extends Component {
                 {' '}
                 RedBull
               </BoldLinks>
-              , and
+              ,
               <BoldLinks target="_blank" href="https://www.queenmary.com/">
                 {' '}
-                Queen Mary.
+                Queen Mary
               </BoldLinks>
+              , and most recently 
+              <BoldLinks target="_blank" href="https://www.medtronic.com/">
+                Medtronic.
+              </BoldLinks>{' '}
             </p>
             <p>
               With a strong passion for tecnhology, I am always striving to
@@ -101,11 +105,11 @@ class IndexPage extends Component {
               to my work flow.
             </p>
             <p>
-              I also enjoy eating delectable sushi{' '}
+              I also enjoy eating sushi{' '}
               <span role="img" aria-label="sushi">
                 🍣{' '}
               </span>
-              , going to the beach with my English Bulldog,
+              , walking my English Bulldog,
               <BoldLinks
                 target="_blank"
                 href="https://www.instagram.com/hersheybully/"
@@ -113,19 +117,11 @@ class IndexPage extends Component {
                 {' '}
                 Hershey
               </BoldLinks>
-              , and exploring Disneyland{' '}
-              <span role="img" aria-label="fireworks">
-                🏰🎆{' '}
+              , and going on trips to Hawaii{' '}
+              <span role="img" aria-label="shaka">
+               🤙{' '}
               </span>{' '}
-              with my girlfriend.
-            </p>
-            <p>
-              Feel free to{' '}
-              <BoldLinks href="mailto:cjvalera@hotmail.com">
-                {' '}
-                contact me
-              </BoldLinks>{' '}
-              if you would like to work on a project, or just want to say hi.
+              with my fiancée.
             </p>
           </Content>
         </Wrapper>
