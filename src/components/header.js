@@ -1,10 +1,11 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import { useSiteMetadata } from "../hooks/use-site-metadata";
 
 const HeaderWrapper = styled.div`
   margin: 1.5rem auto;
-`
+`;
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -13,11 +14,11 @@ const HeaderContainer = styled.div`
   margin: 0 auto;
   max-width: 800px;
   padding: 1.5rem;
-`
+`;
 
 const HeaderTitle = styled.h3`
   margin: 0;
-`
+`;
 
 const Navigation = styled.ul`
   list-style: none;
@@ -27,7 +28,7 @@ const Navigation = styled.ul`
   > li {
     display: inline;
   }
-`
+`;
 
 const StyledLink = styled(Link)`
   padding: 15px 20px;
@@ -37,42 +38,46 @@ const StyledLink = styled(Link)`
     color: #d91344;
     text-decoration: none;
   }
-`
+`;
 
 const NavLink = styled(StyledLink)`
   &:hover {
     border-bottom: 1px solid #eee;
   }
-`
+`;
 
-const Header = ({ siteTitle }) => (
-  <HeaderWrapper>
-    <HeaderContainer>
-      <StyledLink to="/">
-        <HeaderTitle>{siteTitle}</HeaderTitle>
-      </StyledLink>
-      <Navigation>
-        <li>
-          <NavLink
-            activeStyle={{ color: '#d91344' }}
-            activeClassName="active"
-            to="/"
-          >
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            activeStyle={{ color: '#d91344' }}
-            activeClassName="active"
-            to="/projects"
-          >
-            Projects
-          </NavLink>
-        </li>
-      </Navigation>
-    </HeaderContainer>
-  </HeaderWrapper>
-)
+export default function Header() {
+  const { title } = useSiteMetadata();
 
-export default Header
+  return (
+    <HeaderWrapper>
+      <HeaderContainer>
+        <StyledLink to="/">
+          <HeaderTitle>{title}</HeaderTitle>
+        </StyledLink>
+        <Navigation>
+          <li>
+            <NavLink
+              activeStyle={{ color: "#d91344" }}
+              activeClassName="active"
+              to="/"
+            >
+              {" "}
+              Home{" "}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              activeStyle={{ color: "#d91344" }}
+              activeClassName="active"
+              to="/projects"
+            >
+              {" "}
+              Projects{" "}
+            </NavLink>
+          </li>
+        </Navigation>
+      </HeaderContainer>
+    </HeaderWrapper>
+  );
+}

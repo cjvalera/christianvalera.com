@@ -19,7 +19,15 @@ const ProjectsPage = () => (
       Worked on a class II medical app for receiving data from insulin pump and connected GST device using CoreBluetooth. Design and implemented a framework for secure communication 
       with a cloud server to retrieve cryptographic keys.
       "
-      skills={["Swift", "Objective-C", "CoreBluetooth", "Cocoapods", "Carthage", "MVC", "Factory Pattern"]}
+      skills={[
+        "Swift",
+        "Objective-C",
+        "CoreBluetooth",
+        "Cocoapods",
+        "Carthage",
+        "MVC",
+        "Factory Pattern",
+      ]}
       image=""
     />
 
@@ -68,7 +76,6 @@ const ProjectsPage = () => (
       image=""
     />
 
-
     <Project
       animate="left"
       name="Queen Mary"
@@ -90,9 +97,6 @@ const ProjectsPage = () => (
       skills={["Angular 2", "NodeJS", "Pug", "SaSS", "TypeScript"]}
       image=""
     />
-
-
-
   </Layout>
 );
 

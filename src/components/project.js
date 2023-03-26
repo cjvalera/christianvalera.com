@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
 
-const Title = styled(OutboundLink)`
+const Title = styled.a`
   font-size: 1.25rem;
   font-weight: 200;
   color: #011627;

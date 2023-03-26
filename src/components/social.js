@@ -1,13 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
-import { Twitter, Github, Linkedin } from 'styled-icons/feather'
+import React from "react";
+import styled from "styled-components";
+import { Mail, Github, Linkedin } from "@styled-icons/feather";
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   margin: 0 10px;
-`
+`;
 
 const Container = styled.div`
   display: flex;
@@ -22,7 +21,7 @@ const Container = styled.div`
   @media (max-width: 578px) {
     margin-right: 0;
   }
-`
+`;
 
 const Avatar = styled.img`
   border-radius: 50%;
@@ -33,9 +32,9 @@ const Avatar = styled.img`
     transform: scale(1.5);
     z-index: 1;
   }
-`
+`;
 
-const ResumeButton = styled(OutboundLink)`
+const ResumeButton = styled.a`
   color: #222;
   border: 1px solid #000;
   border-radius: 15px 50px 30px;
@@ -47,9 +46,9 @@ const ResumeButton = styled(OutboundLink)`
     color: #fff;
     text-decoration: none;
   }
-`
+`;
 
-const SocialIcons = styled(OutboundLink)`
+const SocialIcons = styled.a`
   color: #222;
   font-size: 22px;
   padding: 5px 15px;
@@ -57,7 +56,7 @@ const SocialIcons = styled(OutboundLink)`
     color: #d91344;
     border-bottom: 1px solid #eee;
   }
-`
+`;
 
 const Social = () => {
   return (
@@ -75,9 +74,6 @@ const Social = () => {
           Resume
         </ResumeButton>
         <Wrapper className="flicker-in-1">
-          <SocialIcons target="_blank" href="https://twitter.com/siakdeta">
-            <Twitter size="20" alt="twitter" />
-          </SocialIcons>
           <SocialIcons target="_blank" href="https://github.com/cjvalera">
             <Github size="20" alt="github" />
           </SocialIcons>
@@ -87,10 +83,13 @@ const Social = () => {
           >
             <Linkedin size="20" alt="linkedin" />
           </SocialIcons>
+          <SocialIcons target="_blank" href="mailto: cjvalera@hotmail.com">
+            <Mail size="20" alt="mail" />
+          </SocialIcons>
         </Wrapper>
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default Social
+export default Social;
