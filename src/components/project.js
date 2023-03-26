@@ -16,7 +16,7 @@ const Title = styled.a`
 
 const Container = styled.div`
   border-bottom: solid 1px #ddd;
-  padding: 1.5rem;
+  padding: 1rem;
   > p {
     font-size: 16px;
     margin: 10px 0 0 0;
@@ -49,7 +49,7 @@ const Image = styled.img`
   margin: 10px 0;
 `;
 
-const Project = props => {
+const Project = (props) => {
   let animate = props.animate;
   let link = props.link;
   let name = props.name;

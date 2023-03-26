@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
-  margin: 1.5rem auto;
+  padding: 1em;
 `;
 
 const HeaderContainer = styled.div`
@@ -11,8 +11,7 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 800px;
-  padding: 1.5rem;
+  max-width: 700px;
 `;
 
 const HeaderTitle = styled.h3`
@@ -30,7 +29,7 @@ const Navigation = styled.ul`
 `;
 
 const StyledLink = styled(Link)`
-  padding: 15px 20px;
+  padding: 5px 10px;
   text-decoration: none;
   color: #50505a;
   &:hover {

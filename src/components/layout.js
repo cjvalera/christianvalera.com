@@ -6,7 +6,7 @@ import Footer from "./footer";
 import "./layout.css";
 
 const Container = styled.div`
-  margin: 2em auto;
+  margin: 1.5em auto;
   max-width: 35em;
 `;
 

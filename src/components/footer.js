@@ -6,6 +6,7 @@ const Tag = styled.small`
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
+  margin-bottom: 1rem;
 `;
 
 export default function Footer() {
