@@ -24,6 +24,7 @@
     "gatsby-plugin-typography": "^5.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-simple-image-viewer": "^1.2.2",
     "react-typography": "^0.16.23",
     "styled-components": "^5.3.9",
     "typography": "^0.16.21",
