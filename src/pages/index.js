@@ -95,7 +95,7 @@ class IndexPage extends Component {
               </BoldLinks>{" "}
             </p>
             <p>
-              With a strong passion for tecnhology, I am always striving to
+              With a strong passion for technology, I am always striving to
               learn and thrive with the latest innovative stack or tool to add
               to my work flow.
             </p>
