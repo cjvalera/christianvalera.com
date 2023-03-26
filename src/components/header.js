@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import { useSiteMetadata } from "../hooks/use-site-metadata";
 
 const HeaderWrapper = styled.div`
   margin: 1.5rem auto;
@@ -47,13 +46,11 @@ const NavLink = styled(StyledLink)`
 `;
 
 export default function Header() {
-  const { title } = useSiteMetadata();
-
   return (
     <HeaderWrapper>
       <HeaderContainer>
         <StyledLink to="/">
-          <HeaderTitle>{title}</HeaderTitle>
+          <HeaderTitle>Christian Valera</HeaderTitle>
         </StyledLink>
         <Navigation>
           <li>
